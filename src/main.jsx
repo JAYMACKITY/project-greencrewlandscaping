@@ -105,7 +105,11 @@ function Pricing() {
 }
 
 function About() {
-  return <section className="about section-pad" id="about"><div className="about-copy"><SectionLabel>A little about us</SectionLabel><h2>Built by local teens. <em>Built on hard work.</em></h2><p>Green Crew Landscaping was started by a group of motivated local teens who wanted to build something of their own while helping people in their community.</p><p>We believe good service is pretty simple: show up, communicate clearly, do the work properly, and treat people’s homes with respect.</p><Button href="#contact" secondary>Meet us at your yard</Button></div><div className="about-image"><img className="crew-photo" src="/images/crew-photo.jpeg" alt="The Green Crew team together" /><div className="about-stamp">LOCAL<br /><span>×</span><br />EDMONTON</div></div></section>;
+  return <section className="about section-pad" id="about"><div className="about-copy"><SectionLabel>A little about us</SectionLabel><h2>Built by local teens. <em>Built on hard work.</em></h2><p>Green Crew Landscaping was started by a group of motivated local teens who wanted to build something of their own while helping people in their community.</p><p>We believe good service is pretty simple: show up, communicate clearly, do the work properly, and treat people’s homes with respect.</p><Button href="#contact" secondary>Meet us at your yard</Button></div><div className="about-image"><img className="crew-photo" src="/images/crew-photo-2.webp" alt="The Green Crew team together" /><div className="about-stamp">LOCAL<br /><span>×</span><br />EDMONTON</div></div></section>;
+}
+
+function CrewGallery() {
+  return <section className="crew-gallery section-pad"><div className="crew-gallery-heading"><SectionLabel>Meet the crew</SectionLabel><h2>A local team, <em>ready to work.</em></h2><p>We are a group of motivated Edmonton teens building something together through good work and great service.</p></div><div className="crew-gallery-grid"><figure><img src="/images/crew-photo-1.jpeg" alt="Green Crew members together on a trip" /><figcaption>The people behind the work</figcaption></figure><figure><img src="/images/crew-photo-3.webp" alt="Green Crew team member" /><figcaption>Part of the crew</figcaption></figure></div></section>;
 }
 
 function ServiceArea() {
@@ -131,7 +135,7 @@ function Footer() {
 }
 
 function App() {
-  return <><Navbar /><main><Hero /><Services /><WhyUs /><WorkGallery /><Reviews /><HowItWorks /><Options /><Pricing /><About /><ServiceArea /><Contact /></main><Footer /></>;
+  return <><Navbar /><main><Hero /><Services /><WhyUs /><WorkGallery /><Reviews /><HowItWorks /><Options /><Pricing /><About /><CrewGallery /><ServiceArea /><Contact /></main><Footer /></>;
 }
 
 createRoot(document.getElementById('root')).render(<StrictMode><App /></StrictMode>);
